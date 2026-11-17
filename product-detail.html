@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chi tiết sản phẩm | COFFEEHOUSE</title>
+<meta name="description" content="Thông tin chi tiết sản phẩm tại COFFEEHOUSE.">
+<link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="detail">
+<div id="site-header"></div>
+
+<main>
+
+<section class="section"><div class="container">
+  <p class="crumb" style="color:var(--coffee);margin-bottom:24px"><a href="index.html">Trang chủ</a> / <a href="shop.html">Cửa hàng</a> / <span id="crumbName">Chi tiết</span></p>
+  <div class="detail" id="detailBox"></div></div></section>
+<div id="detailExtra">
+<section class="section alt"><div class="container two-col" style="align-items:start">
+  <div><h2>Đánh giá của khách hàng</h2><div id="reviewList"></div></div>
+  <form class="form-card" id="reviewForm" novalidate><h3>Viết đánh giá</h3>
+    <div class="field"><label>Số sao</label><div class="star-pick" id="starPick" aria-label="Chọn số sao"></div></div>
+    <div class="field"><label for="rvName">Tên của bạn</label><input id="rvName" type="text"><small class="err"></small></div>
+    <div class="field"><label for="rvText">Nội dung</label><textarea id="rvText"></textarea><small class="err"></small></div>
+    <button class="btn" type="submit">Gửi đánh giá</button></form></div></section>
+<section class="section"><div class="container"><div class="section-title"><h2>Sản phẩm liên quan</h2></div><div class="product-grid" id="relatedGrid"></div></div></section>
+</div>
+</main>
+<div id="site-footer"></div>
+<div id="toast-wrap" aria-live="polite"></div>
+<script src="assets/js/products.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/shop.js"></script>
+</body>
+</html>

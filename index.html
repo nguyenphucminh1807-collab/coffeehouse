@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trang chủ | COFFEEHOUSE</title>
+<meta name="description" content="COFFEEHOUSE – cà phê, trà, đồ uống và bánh ngọt chọn lọc. Brew Your Moment.">
+<link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+
+<main>
+
+<section class="hero"><div class="container"><div class="hero-content">
+  <p class="slogan">Brew Your Moment – Đánh Thức Mọi Khoảnh Khắc</p>
+  <h1>Cà phê nguyên bản, trọn vị từ Tây Nguyên</h1>
+  <p>Hạt cà phê rang mới mỗi tuần, trà thơm và bánh ngọt thủ công. Giao tận nơi chỉ trong 2 giờ nội thành.</p>
+  <div class="hero-btns"><a class="btn" href="shop.html">Mua ngay</a><a class="btn btn-outline" href="#categories">Khám phá sản phẩm</a></div>
+</div></div></section>
+<div class="container"><div class="perks">
+  <div class="perk"><i class="fa-solid fa-truck-fast"></i><div><strong>Giao hàng nhanh</strong><small>Miễn phí từ 500.000 VNĐ</small></div></div>
+  <div class="perk"><i class="fa-solid fa-fire-flame-curved"></i><div><strong>Rang mới mỗi tuần</strong><small>Giữ trọn hương thơm</small></div></div>
+  <div class="perk"><i class="fa-solid fa-shield-heart"></i><div><strong>Cam kết chất lượng</strong><small>Đổi trả trong 7 ngày</small></div></div>
+  <div class="perk"><i class="fa-solid fa-headset"></i><div><strong>Hỗ trợ 7:00–22:00</strong><small>Hotline 0901 234 567</small></div></div>
+</div></div>
+<section class="section" id="categories"><div class="container">
+  <div class="section-title"><h2>Danh mục sản phẩm</h2><p>Từ hạt cà phê đến chiếc bánh ngọt đi kèm, mọi thứ cho một khoảnh khắc trọn vẹn.</p></div>
+  <div class="cat-grid" id="categoryGrid"></div></div></section>
+<section class="section alt"><div class="container">
+  <div class="section-title"><h2>Sản phẩm nổi bật</h2><p>Những sản phẩm được khách hàng yêu thích và mua nhiều nhất.</p></div>
+  <div class="product-grid" id="featuredGrid"></div>
+  <p style="text-align:center;margin-top:34px"><a class="btn btn-ghost" href="shop.html">Xem tất cả sản phẩm</a></p></div></section>
+<section class="section"><div class="container"><div class="promo-grid">
+  <div class="promo p1"><h3>Giảm 10% toàn bộ cà phê</h3><p>Nhập mã khi thanh toán, áp dụng cho mọi đơn hàng.</p><div><span class="code-pill">COFFEE10</span> <button class="btn btn-sm" data-copy="COFFEE10">Sao chép mã</button></div></div>
+  <div class="promo p2"><h3>Combo Sáng Năng Lượng</h3><p>Espresso Blend + Croissant Bơ Pháp + Tiramisu Cà Phê.</p><button class="btn btn-sm" data-combo="3,21,22">Thêm combo vào giỏ</button></div>
+</div></div></section>
+<section class="section alt"><div class="container">
+  <div class="section-title"><h2>Sản phẩm mới</h2><p>Vừa lên kệ tuần này, hãy là người đầu tiên thưởng thức.</p></div>
+  <div class="product-grid" id="newGrid"></div></div></section>
+<section class="section"><div class="container">
+  <div class="section-title"><h2>Góc cà phê</h2><p>Kiến thức, công thức pha chế và những câu chuyện văn hóa cà phê.</p></div>
+  <div class="blog-grid" id="blogGrid"></div>
+  <p style="text-align:center;margin-top:34px"><a class="btn btn-ghost" href="blog.html">Xem tất cả bài viết</a></p></div></section>
+<section class="newsletter"><div class="container inner">
+  <div><h2>Nhận ưu đãi từ COFFEEHOUSE</h2><p>Đăng ký email để nhận mã giảm giá và công thức pha chế mới.</p></div>
+  <form id="newsletterForm" novalidate><div class="field"><input id="newsEmail" type="email" placeholder="Email của bạn" aria-label="Email nhận tin"><small class="err"></small></div><button class="btn btn-dark" type="submit">Đăng ký nhận tin</button></form>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<div id="toast-wrap" aria-live="polite"></div>
+<script src="assets/js/products.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

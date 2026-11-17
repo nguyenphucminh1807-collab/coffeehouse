@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng nhập | COFFEEHOUSE</title>
+<meta name="description" content="Đăng nhập tài khoản COFFEEHOUSE.">
+<link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="login">
+<div id="site-header"></div>
+<section class="page-hero"><div class="container"><h1>Đăng nhập</h1><p class="crumb"><a href="index.html">Trang chủ</a> / Đăng nhập</p></div></section>
+<main>
+
+<section class="section alt"><div class="container auth-wrap"><form class="form-card" id="loginForm" novalidate><h2>Đăng nhập</h2><div id="loginMsg"></div>
+  <div class="field"><label for="loginId">Email hoặc số điện thoại</label><input id="loginId" type="text" placeholder="" ><small class="err"></small></div><div class="field"><label for="loginPw">Mật khẩu</label><input id="loginPw" type="password" placeholder="" ><small class="err"></small></div>
+  <div class="field"><label class="check"><input type="checkbox" id="remember"> Ghi nhớ đăng nhập</label></div>
+  <button class="btn btn-block" type="submit">Đăng nhập</button>
+  <p style="text-align:center;margin:18px 0 0">Chưa có tài khoản? <a href="register.html" style="color:var(--caramel);font-weight:600">Đăng ký</a></p></form></div></section>
+</main>
+<div id="site-footer"></div>
+<div id="toast-wrap" aria-live="polite"></div>
+<script src="assets/js/products.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/auth.js"></script>
+</body>
+</html>

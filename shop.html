@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cửa hàng | COFFEEHOUSE</title>
+<meta name="description" content="Mua cà phê hạt, rang xay, hòa tan, trà, đồ uống và bánh ngọt tại COFFEEHOUSE.">
+<link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="shop">
+<div id="site-header"></div>
+<section class="page-hero"><div class="container"><h1>Cửa hàng</h1><p class="crumb"><a href="index.html">Trang chủ</a> / Cửa hàng</p></div></section>
+<main>
+
+<section class="section"><div class="container shop-layout">
+  <aside class="sidebar">
+    <div class="grp"><h4>Tìm kiếm</h4><input class="select" id="shopSearch" type="search" placeholder="Tên sản phẩm..." aria-label="Tìm sản phẩm"></div>
+    <div class="grp"><h4>Danh mục</h4><ul class="cat-list" id="catList"></ul></div>
+    <div class="grp"><h4>Mức giá</h4>
+      <label class="check"><input type="radio" name="price" value="all" checked> Tất cả</label>
+      <label class="check"><input type="radio" name="price" value="0-100000"> Dưới 100.000 VNĐ</label>
+      <label class="check"><input type="radio" name="price" value="100000-200000"> 100.000 – 200.000 VNĐ</label>
+      <label class="check"><input type="radio" name="price" value="200000-400000"> 200.000 – 400.000 VNĐ</label>
+      <label class="check"><input type="radio" name="price" value="400000-"> Trên 400.000 VNĐ</label></div>
+    <button class="btn btn-ghost btn-sm btn-block" id="resetFilters" type="button">Xóa bộ lọc</button>
+  </aside>
+  <div><div class="shop-toolbar"><span id="shopCount"></span>
+    <select class="select" id="sortSelect" aria-label="Sắp xếp"><option value="default">Bán chạy nhất</option><option value="price-asc">Giá tăng dần</option><option value="price-desc">Giá giảm dần</option><option value="name">Tên A – Z</option><option value="rating">Đánh giá cao nhất</option></select></div>
+    <div class="product-grid three" id="shopGrid"></div><div class="pagination" id="pagination"></div></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<div id="toast-wrap" aria-live="polite"></div>
+<script src="assets/js/products.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/shop.js"></script>
+</body>
+</html>

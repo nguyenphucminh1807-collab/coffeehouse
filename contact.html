@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liên hệ | COFFEEHOUSE</title>
+<meta name="description" content="Liên hệ COFFEEHOUSE: địa chỉ, điện thoại, email và bản đồ.">
+<link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+<section class="page-hero"><div class="container"><h1>Liên hệ</h1><p class="crumb"><a href="index.html">Trang chủ</a> / Liên hệ</p></div></section>
+<main>
+
+<section class="section"><div class="container">
+<div class="info-cards">
+  <div class="info-card"><i class="fa-solid fa-location-dot"></i><h4>Địa chỉ</h4><p>123 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</p></div>
+  <div class="info-card"><i class="fa-solid fa-phone"></i><h4>Điện thoại</h4><p><a href="tel:0901234567">0901 234 567</a></p></div>
+  <div class="info-card"><i class="fa-solid fa-envelope"></i><h4>Email</h4><p><a href="mailto:hello@coffeehouse.vn">hello@coffeehouse.vn</a></p></div>
+  <div class="info-card"><i class="fa-solid fa-clock"></i><h4>Giờ mở cửa</h4><p>7:00 – 22:00 mỗi ngày</p></div></div>
+<div class="two-col" style="align-items:stretch">
+  <form class="form-card" id="contactForm" novalidate><h3>Gửi tin nhắn cho chúng tôi</h3><div id="contactMsg"></div>
+    <div class="form-row"><div class="field"><label for="ctName">Họ tên *</label><input id="ctName" type="text" placeholder="" ><small class="err"></small></div><div class="field"><label for="ctEmail">Email *</label><input id="ctEmail" type="email" placeholder="" ><small class="err"></small></div></div>
+    <div class="form-row"><div class="field"><label for="ctPhone">Số điện thoại</label><input id="ctPhone" type="tel" placeholder="" ><small class="err"></small></div><div class="field"><label for="ctSubject">Chủ đề *</label><input id="ctSubject" type="text" placeholder="" ><small class="err"></small></div></div>
+    <div class="field"><label for="ctMsg">Nội dung *</label><textarea id="ctMsg"></textarea><small class="err"></small></div>
+    <button class="btn" type="submit">Gửi liên hệ</button></form>
+  <iframe class="map-frame" title="Bản đồ cửa hàng COFFEEHOUSE" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Ph%E1%BB%91%20%C4%91i%E1%BB%87%20b%E1%BB%99%20Nguy%E1%BB%85n%20Hu%E1%BB%87%2C%20Qu%E1%BA%ADn%201%2C%20TP.HCM&amp;output=embed"></iframe>
+</div></div></section>
+</main>
+<div id="site-footer"></div>
+<div id="toast-wrap" aria-live="polite"></div>
+<script src="assets/js/products.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thanh toán | COFFEEHOUSE</title>
+<meta name="description" content="Thanh toán đơn hàng tại COFFEEHOUSE.">
+<link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="checkout">
+<div id="site-header"></div>
+<section class="page-hero"><div class="container"><h1>Thanh toán</h1><p class="crumb"><a href="index.html">Trang chủ</a> / Thanh toán</p></div></section>
+<main>
+
+<section class="section"><div class="container">
+<div id="checkoutEmpty" class="empty hidden"><i class="fa-solid fa-bag-shopping"></i><h3>Chưa có sản phẩm để thanh toán</h3><a class="btn" href="shop.html">Đến cửa hàng</a></div>
+<div id="orderSuccess" class="success hidden"><i class="fa-solid fa-circle-check"></i><h2>Đặt hàng thành công!</h2><p>Mã đơn hàng của bạn:</p><div class="order-code" id="orderCode"></div>
+  <p>Tổng thanh toán: <strong id="orderTotal"></strong></p><p id="orderPay"></p><a class="btn" href="index.html">Về trang chủ</a> <a class="btn btn-ghost" href="shop.html">Mua thêm</a></div>
+<div id="checkoutFull" class="checkout-layout">
+  <form class="form-card" id="checkoutForm" novalidate><h3>Thông tin giao hàng</h3>
+    <div class="field"><label for="coName">Họ tên *</label><input id="coName" type="text" placeholder="" ><small class="err"></small></div>
+    <div class="form-row"><div class="field"><label for="coPhone">Số điện thoại *</label><input id="coPhone" type="tel" placeholder="0901234567" ><small class="err"></small></div><div class="field"><label for="coEmail">Email *</label><input id="coEmail" type="email" placeholder="" ><small class="err"></small></div></div>
+    <div class="field"><label for="coAddress">Địa chỉ giao hàng *</label><input id="coAddress" type="text" placeholder="" ><small class="err"></small></div>
+    <div class="field"><label for="coNote">Ghi chú đơn hàng</label><textarea id="coNote" placeholder="Ví dụ: giao giờ hành chính"></textarea></div>
+    <h3>Phương thức thanh toán</h3>
+    <label class="pay-opt"><input type="radio" name="pay" value="cod" checked><span><strong>Thanh toán khi nhận hàng (COD)</strong><br><small>Trả tiền mặt cho nhân viên giao hàng.</small></span></label>
+    <label class="pay-opt"><input type="radio" name="pay" value="bank"><span><strong>Chuyển khoản ngân hàng</strong><br><small>Thanh toán mô phỏng, không trừ tiền thật.</small></span></label>
+    <div class="bank-box hidden" id="bankBox">Ngân hàng: Vietcombank · STK: 0123 456 789 · Chủ TK: CONG TY COFFEEHOUSE</div>
+    <button class="btn btn-block" type="submit">Xác nhận đặt hàng</button></form>
+  <aside class="summary"><h3>Đơn hàng của bạn</h3><div id="miniList"></div>
+    <form class="coupon" id="couponForm"><input id="couponInput" placeholder="Mã giảm giá" aria-label="Mã giảm giá"><button class="btn btn-sm" type="submit">Áp dụng</button></form><p class="coupon-hint" id="couponMsg"></p>
+    <div class="sum-row"><span>Tạm tính</span><span id="sumSub"></span></div><div class="sum-row"><span>Giảm giá</span><span id="sumDiscount"></span></div>
+    <div class="sum-row"><span>Phí vận chuyển</span><span id="sumShip"></span></div><div class="sum-row total"><span>Tổng cộng</span><span id="sumTotal"></span></div></aside>
+</div></div></section>
+</main>
+<div id="site-footer"></div>
+<div id="toast-wrap" aria-live="polite"></div>
+<script src="assets/js/products.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/checkout.js"></script>
+</body>
+</html>
